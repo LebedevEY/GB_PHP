@@ -13,6 +13,7 @@
     <div class="wrapper">
         <h1 class="header">Галерея</h1>
         <div class="content">
+            <button><img src="/img/1.jpg" width="100px" alt=""></button>
             <?php
             $files = scandir("img");
             for ($i = 2; $i < count($files); $i++) { ?>
@@ -33,6 +34,7 @@
             </form>
         </div>
     </div>
+
     <script>
         document.getElementById('upload_input').addEventListener('change', function(e) {
             document.getElementById('file_name').innerHTML = this.files[0].name;
