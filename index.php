@@ -13,7 +13,6 @@
     <div class="wrapper">
         <h1 class="header">Галерея</h1>
         <div class="content">
-            <button><img src="/img/1.jpg" width="100px" alt=""></button>
             <?php
             $files = scandir("img");
             for ($i = 2; $i < count($files); $i++) { ?>
