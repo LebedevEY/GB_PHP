@@ -14,10 +14,15 @@
         <h1 class="header">Галерея</h1>
         <div class="content">
             <?php
-            $files = scandir("img");
-            for ($i = 2; $i < count($files); $i++) { ?>
-                <a href="fullsize.php/?img=<?= $files[$i] ?>" target="blank"><img width="200px" src="img/<?= $files[$i] ?>"></a><?php
-                                                                                                                            } ?>
+            require "config.php";
+            $sql = "select * from images order by views desc";
+            $res = mysqli_query($connect, $sql);
+            while ($data = mysqli_fetch_assoc($res)){
+                    ?><a href="fullsize.php/?img=<?= $data['name'] ?>" target="blank"><img width="200px" src="img/<?= $data['name'] ?>" alt="image"></a><?php
+            }
+
+            ?>
+
         </div>
         <div class="upload">
             <form class="upload_form" action="upload.php" method="post" enctype="multipart/form-data">

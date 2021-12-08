@@ -10,8 +10,19 @@
 </head>
 
 <body>
+    <?php
+        require "config.php";
+
+        $sql_set = "update images set views = views +1 where name = '{$_GET['img']}'";
+        $sql_get = "select views from images where name = '{$_GET['img']}'";
+        $res_set = mysqli_query($connect, $sql_set);
+        $res_get = mysqli_query($connect, $sql_get);
+        $views = mysqli_fetch_assoc($res_get);
+
+    ?>
     <div class="img_wrapper">
-        <img style="max-width: 1920px;" class="fullsize_img" src="/img/<?= $_GET['img'] ?>" alt="image">
+        <img style="max-width: 1080px;" class="fullsize_img" src="/img/<?= $_GET['img'] ?>" alt="image">
+        <p class="img_text">Количество просмотров: <span style="color: white"><?= $views['views'] ?></span></p>
     </div>
 </body>
 
