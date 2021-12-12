@@ -184,7 +184,7 @@ $data = mysqli_fetch_assoc($res);
             </section>
             <div class="footer__review center">
                 <div class="review">
-                    <img src="img/review_img.png" alt="photo">
+                    <img src="img/store/review_img.png" alt="photo">
                     <p class="review__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<i> a pulvinar
                             purus
                             condimentum</i>“</p>

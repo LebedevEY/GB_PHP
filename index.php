@@ -11,6 +11,7 @@
 
 <body>
     <div class="wrapper">
+        <a style="color: white" href="catalog.php">Каталог</a>
         <h1 class="header">Галерея</h1>
         <div class="content">
             <?php
