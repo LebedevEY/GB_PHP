@@ -39,6 +39,29 @@
         </div>
     </div>
 
+    <div class="reviews">
+        <form class="reviews_form" action="review.php" method="post">
+            <input class="reviews_form_input" required type="text" name="name" placeholder="Ваше имя">
+            <textarea class="reviews_form_input" required name="review" id="review" cols="30" rows="10"></textarea>
+            <input class="reviews_form_button" type="submit" value="Отправить">
+        </form>
+        <div class="reviews_list">
+            <h2 class="reviews_header">Отзывы:</h2>
+            <?php
+            $sql_get = "select * from reviews";
+            $res_get = mysqli_query($connect, $sql_get);
+                while ($data = mysqli_fetch_assoc($res_get)){
+                    ?>
+                    <div class="review">
+                        <h2 class="review_name"><?= $data['name'] ?>:</h2>
+                        <p class="review_text"><?= $data['review'] ?></p>
+                    </div>
+                    <?php
+                }
+            ?>
+        </div>
+    </div>
+
     <script>
         document.getElementById('upload_input').addEventListener('change', function(e) {
             document.getElementById('file_name').innerHTML = this.files[0].name;

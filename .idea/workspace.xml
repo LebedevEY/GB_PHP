@@ -5,22 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbced946-2ee0-4684-b178-a5a26118c3f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/books.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_catalog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_var.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/calc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/calc_1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/calc_1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/calc_2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc/calc_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagesDB/db.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagesDB/images.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagesDB/images.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/deer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/lion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/spaceman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/account.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/filter_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/filter_icon_pink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/footer_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/goods/product_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/goods/product_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/goods/product_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/goods/product_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/goods/product_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/goods/product_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/goods/product_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/goods/product_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/goods/product_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/list_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/review_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/store/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ufo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/review.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fullsize.php" beforeDir="false" afterPath="$PROJECT_DIR$/fullsize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/123.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/5.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +60,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,6 +90,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -61,6 +100,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\gbhwphp" />
+      <recent name="C:\OpenServer\domains\gbhwphp\img\store" />
+      <recent name="C:\OpenServer\domains\gbhwphp\imagesDB" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\gbhwphp\calc" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +122,9 @@
       <workItem from="1638377237872" duration="176000" />
       <workItem from="1638613567229" duration="124000" />
       <workItem from="1638985047412" duration="3062000" />
-      <workItem from="1638990382602" duration="5230000" />
+      <workItem from="1638990382602" duration="5767000" />
+      <workItem from="1639295665139" duration="21155000" />
+      <workItem from="1639322467426" duration="3761000" />
     </task>
     <servers />
   </component>
