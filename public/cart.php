@@ -44,7 +44,7 @@ require_once "../controllers/Goods.php";
                         <div class="cart__product__content">
                             <a href="product.php?id=<?= $item['good_id'] ?>"
                                class="cart__product__content__link"><?= $item['name'] ?></a>
-                            <button class="cart__product_close" onclick="del(<?= $item['id'] ?>)">
+                            <button class="cart__product_close" onclick="delGood(<?= $item['id'] ?>)">
                                 <svg width="18" height="18" viewBox="0 0 18 18"
                                      fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -64,7 +64,9 @@ require_once "../controllers/Goods.php";
                                 </li>
                                 <li class="cart__product__content__list__item">Quantity:
                                     <!--Доделать изменение количества-->
-                                    <input class="quantity" type="number" value="<?= $item['count'] ?>">
+                                    <input class="quantity" type="text" value="<?= $item['count'] ?>">
+                                    <button class="quantity__button" onclick="moreQuantity(<?= $item['good_id'] ?>)">+</button>
+                                    <button class="quantity__button" onclick="lessQuantity(<?= $item['good_id'] ?>)">-</button>
                                 </li>
                             </ul>
                         </div>
@@ -72,7 +74,7 @@ require_once "../controllers/Goods.php";
                 <?php } ?>
 
                 <div class="cart__buttons">
-                    <button class="cart__button">Clear shopping cart</button>
+                    <button class="cart__button" onclick="clearCart()">Clear shopping cart</button>
                     <form action="catalog.php">
                         <button class="cart__button">Continue shopping</button>
                     </form>
@@ -87,9 +89,9 @@ require_once "../controllers/Goods.php";
                     <button class="cart__right__form__button">GET A QUOTE</button>
                 </form>
                 <div class="cart__right__total">
-                    <h4 class="cart__right__total__h4">SUB TOTAL <span style="margin-left: 20px;">$900</span></h4>
+                    <h4 class="cart__right__total__h4">SUB TOTAL <span style="margin-left: 20px;">$ <?= $sum[0] ?></span></h4>
                     <h3 class="cart__right__total__h3">GRAND TOTAL <span
-                                style="margin-left: 20px; color: #F16D7F;">$900</span></h3>
+                                style="margin-left: 20px; color: #F16D7F;">$ <?= $sum[0] ?></span></h3>
                     <hr class="cart__right__total__hr">
                     <button class="cart__right__total__button">PROCEED TO CHECKOUT</button>
                 </div>

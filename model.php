@@ -25,3 +25,9 @@ function cartCounter ($connect, $id, $count) {
     $res = sprintf($sql, mysqli_real_escape_string($connect, $count), $id);
     return mysqli_query($connect, $res);
 }
+
+function getSum ($connect, $column, $count, $table) {
+    $sql = "SELECT SUM(`{$column}` * `{$count}`) FROM `{$table}`";
+    $res = mysqli_query($connect, $sql);
+    return mysqli_fetch_row($res);
+}

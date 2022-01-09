@@ -160,7 +160,7 @@ require "../controllers/Goods.php";
                         </a>
                         <p class="card__text"><?= $item['description'] ?></p>
                         <p class="card__price">$<?= $item['price'] ?>.00</p>
-                        <button onclick="item(<?= $item['id'] ?>)" class="product__add">
+                        <button onclick="addGood(<?= $item['id'] ?>)" class="product__add">
                             <svg class="product__cart" width="27" height="25"
                                  viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path

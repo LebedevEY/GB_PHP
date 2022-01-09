@@ -194,6 +194,13 @@
 .quantity:focus {
   outline: none;
 }
+.quantity__button {
+  width: 23px;
+  height: 23px;
+  background: none;
+  outline: none;
+  border: 1px solid #EAEAEA;
+}
 
 .registration {
   display: flex;
@@ -694,6 +701,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
