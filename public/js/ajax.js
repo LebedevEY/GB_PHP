@@ -4,9 +4,23 @@ function item(id){
         type: 'POST',
         url: '../controllers/Cart.php',
         data: 'id='+id,
-        success: function(data){
+        success: function (){
             document.getElementById('circle').style.display = 'block';
-            $(".basket-items").html(data);
         }
     });
+};
+
+function del(id) {
+
+    $.ajax({
+        type: 'POST',
+        url: '../controllers/Cart.php',
+        data: {
+            id: id,
+            action: 'delete'
+        },
+        success: function (){
+            location.reload();
+        }
+    })
 }

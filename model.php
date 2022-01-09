@@ -1,8 +1,6 @@
 <?php
 
-include_once "../config.php";
-
-$_SESSION['user'] = 'user' . mt_rand();
+include_once "config.php";
 
 function getAll ($connect, $table) {
     $sql = "select * from {$table}";
@@ -21,3 +19,9 @@ function getOne($connect, $id, $table) {
     return mysqli_fetch_assoc($res);
 }
 
+function cartCounter ($connect, $id, $count) {
+    $id = (int)$id;
+    $sql = "UPDATE `cart` SET `count` = '%d' WHERE `good_id` = '%d'";
+    $res = sprintf($sql, mysqli_real_escape_string($connect, $count), $id);
+    return mysqli_query($connect, $res);
+}

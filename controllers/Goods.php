@@ -9,4 +9,10 @@ if (isset($_GET['id'])) {
 
 $good = getOne($connect, $id, 'goods');
 
-$_SESSION['user'] = 'user_' . mt_rand();
+$cart = getAll($connect, 'cart');
+
+if (count($cart) != 0) {
+    $_SESSION['cart_empty'] = 0;
+} else {
+    $_SESSION['cart_empty'] = 1;
+}

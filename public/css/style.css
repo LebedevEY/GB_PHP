@@ -151,6 +151,9 @@
   position: absolute;
   top: 22px;
   right: 22px;
+  outline: none;
+  background: none;
+  border: none;
 }
 .cart__product_close:hover path {
   fill: #F16D7F;
@@ -755,6 +758,7 @@ body {
 .header .header__right {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .header .header__right .header__icons:not(:last-child) {
   margin-right: 33px;
@@ -792,7 +796,7 @@ body {
 .nav {
   display: none;
   position: absolute;
-  top: 75px;
+  top: 54px;
   right: 0;
   background-color: #fff;
   min-width: 232px;

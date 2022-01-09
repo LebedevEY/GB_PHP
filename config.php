@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['user'] = 'guest';
 
 const SERVER = "localhost";
 const DB = "images";
